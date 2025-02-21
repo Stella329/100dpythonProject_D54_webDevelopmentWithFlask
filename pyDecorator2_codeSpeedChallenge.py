@@ -16,7 +16,7 @@ def speed_calc_decorator(function):
         function()
         end = time.time()
         speed = end - start
-        print(f'{function.__name__} run speed: {speed}')
+        print(f'{function.__name__} run speed: {speed:.6f}') #6位
 
     return wrapper_fun
 
